@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Solitaire", "Solitaire\Solitaire.vcxproj", "{ACDD6FFC-C810-45E6-9C9A-C55C8E7C5682}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACDD6FFC-C810-45E6-9C9A-C55C8E7C5682}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ACDD6FFC-C810-45E6-9C9A-C55C8E7C5682}.Debug|Win32.Build.0 = Debug|Win32
+		{ACDD6FFC-C810-45E6-9C9A-C55C8E7C5682}.Release|Win32.ActiveCfg = Release|Win32
+		{ACDD6FFC-C810-45E6-9C9A-C55C8E7C5682}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
