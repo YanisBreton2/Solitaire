@@ -1,0 +1,22 @@
+﻿La génération a démarré 21/10/2015 20:52:14.
+     1>Projet "M:\Game\Solitaire\Solitaire\Solitaire.vcxproj" sur le nœud 2 (build cible(s)).
+     1>PrepareForBuild:
+         Création du répertoire "M:\Game\Solitaire\Debug\".
+       InitializeBuildStatus:
+         Création de "Debug\Solitaire.unsuccessfulbuild", car "AlwaysCreate" a été spécifié.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"M:\LibCPP\SFML-2.3.2\include" /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"M:\Game\Solitaire\Debug\Solitaire.exe" /NOLOGO /LIBPATH:"M:\LibCPP\SFML-2.3.2\lib" "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-system-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Solitaire.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"M:\Game\Solitaire\Debug\Solitaire.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"M:\Game\Solitaire\Debug\Solitaire.lib" /MACHINE:X86 Debug\main.obj
+         Solitaire.vcxproj -> M:\Game\Solitaire\Debug\Solitaire.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"M:\Game\Solitaire\Debug\Solitaire.exe;#1" /manifest Debug\Solitaire.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Suppression du fichier "Debug\Solitaire.unsuccessfulbuild".
+         Mise à jour de l'horodatage "Debug\Solitaire.lastbuildstate".
+     1>Génération du projet "M:\Game\Solitaire\Solitaire\Solitaire.vcxproj" terminée (build cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:03.03

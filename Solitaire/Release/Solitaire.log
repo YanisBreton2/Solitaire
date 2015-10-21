@@ -1,0 +1,22 @@
+﻿La génération a démarré 21/10/2015 21:08:45.
+     1>Projet "M:\Game\Solitaire\Solitaire\Solitaire.vcxproj" sur le nœud 2 (build cible(s)).
+     1>InitializeBuildStatus:
+         Création de "Release\Solitaire.unsuccessfulbuild", car "AlwaysCreate" a été spécifié.
+       ClCompile:
+         Toutes les sorties sont à jour.
+       Link:
+         Toutes les sorties sont à jour.
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"M:\Game\Solitaire\Release\Solitaire.exe" /NOLOGO /LIBPATH:"M:\LibCPP\SFML-2.3.2\lib" "sfml-graphics.lib" "sfml-window.lib" "sfml-system.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Solitaire.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"M:\Game\Solitaire\Release\Solitaire.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"M:\Game\Solitaire\Release\Solitaire.lib" /MACHINE:X86 Release\main.obj
+         Génération de code en cours
+         Fin de la génération du code
+         Solitaire.vcxproj -> M:\Game\Solitaire\Release\Solitaire.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"M:\Game\Solitaire\Release\Solitaire.exe;#1" /manifest Release\Solitaire.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Suppression du fichier "Release\Solitaire.unsuccessfulbuild".
+         Mise à jour de l'horodatage "Release\Solitaire.lastbuildstate".
+     1>Génération du projet "M:\Game\Solitaire\Solitaire\Solitaire.vcxproj" terminée (build cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:00.33
