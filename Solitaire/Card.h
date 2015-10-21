@@ -23,6 +23,7 @@ public:
 	int			getNumber(void);
 	void		setVisible(bool value);
 	sf::Sprite	getSprite(void);
+	void		setPosition(float x, float y);
 
 private:
 	int			m_type;

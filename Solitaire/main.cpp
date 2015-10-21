@@ -52,6 +52,7 @@ int displayMenu(RenderWindow *window)
 int play(RenderWindow *window)
 {
 	MainApplication app(window);
+	app.launch();
 	return (0);
 }
 
@@ -60,8 +61,6 @@ int main()
 	RenderWindow window(VideoMode(1400, 800), "Solitaire");
 	while (window.isOpen())
 	{
-		Event evt;
-
 		int choice = displayMenu(&window);
 		if (choice == PLAY)
 			play(&window);

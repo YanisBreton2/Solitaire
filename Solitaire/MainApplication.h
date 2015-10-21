@@ -12,6 +12,7 @@ public:
 	MainApplication(sf::RenderWindow *window);
 	~MainApplication(void);
 	void	initBoard(void);
+	void	launch(void);
 
 public:
 	sf::RenderWindow	*m_window;

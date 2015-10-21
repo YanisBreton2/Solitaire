@@ -45,7 +45,10 @@ void	MainApplication::initBoard()
 	int	number;
 	for (type = 1; type < 5; type++)
 		for (number = 1; number < 14; number++)
+		{
 			m_cards[(type - 1) * 13 + number - 1] = new Card(type, number);
+			m_cards[(type - 1) * 13 + number - 1]->setPosition(80.0f * number, 150.0f * type);
+		}
 	initBoard();
 }
 
@@ -54,4 +57,23 @@ MainApplication::~MainApplication(void)
 	int	i;
 	for (i = 0; i < 52; i++)
 		delete m_cards[i];
+}
+
+void	MainApplication::launch()
+{
+	while (m_window->isOpen())
+	{
+		sf::Event evt;
+		
+		while (m_window->pollEvent(evt))
+		{
+			if (evt.type == sf::Event::Closed)
+				m_window->close();
+		}
+		m_window->clear(sf::Color(33, 116, 64));
+		for (int i=0; i < 52; i++)
+			m_window->draw(m_cards[i]->getSprite()); // Temporaire
+		m_window->display();
+	}
+	exit(0);
 }
