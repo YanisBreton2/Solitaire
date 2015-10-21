@@ -1,5 +1,7 @@
 #include <SFML\Graphics.hpp>
 
+#include "MainApplication.h"
+
 #define PLAY (0)
 #define EXIT (1)
 
@@ -47,8 +49,9 @@ int displayMenu(RenderWindow *window)
 	return (EXIT);
 }
 
-int play()
+int play(RenderWindow *window)
 {
+	MainApplication app(window);
 	return (0);
 }
 
@@ -61,7 +64,7 @@ int main()
 
 		int choice = displayMenu(&window);
 		if (choice == PLAY)
-			play();
+			play(&window);
 		else if (choice == EXIT)
 			window.close();
 	}

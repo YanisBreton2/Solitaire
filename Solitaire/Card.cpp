@@ -17,9 +17,10 @@ std::string cardTypeToString(int type)
 
 Card::Card(int type, int number): m_type(type), m_number(number)
 {
-	if (!m_texture.loadFromFile("../Ressource/card/"+cardTypeToString(type)+"/"+m_number+".png"))
-		exit(1);
-	m_sprite.setTexture(m_texture);
+	//if (!m_texture.loadFromFile("../Ressource/card/"+cardTypeToString((long long)type)+"/" + + ".png"))
+	//	exit(1);
+	//m_sprite.setTexture(m_texture);
+	m_hide = false;
 }
 
 
@@ -40,4 +41,9 @@ int Card::getNumber(void)
 sf::Sprite Card::getSprite(void)
 {
 	return (m_sprite);
+}
+
+void	Card::setVisible(bool value)
+{
+	m_hide = value;
 }
