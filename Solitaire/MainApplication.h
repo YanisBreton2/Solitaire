@@ -6,13 +6,23 @@
 
 # include "Card.h"
 
+# define PILE_FIRST_POSITION_X ((float)50)
+# define PILE_POSITION_Y ((float)220)
+# define PILE_DELTA_X ((float)200)
+# define PILE_DELTA_Y ((float)10)
+
+# define STACK_POSITION_X ((float)50)
+# define STACK_POSITION_Y ((float)50)
+
 class MainApplication
 {
 public:
 	MainApplication(sf::RenderWindow *window);
 	~MainApplication(void);
 	void	initBoard(void);
+	void	initPosition(void);
 	void	launch(void);
+	void	drawBoard(void);
 
 public:
 	sf::RenderWindow	*m_window;

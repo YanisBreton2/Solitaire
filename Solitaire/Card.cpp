@@ -29,7 +29,7 @@ Card::Card(int type, int number): m_type(type), m_number(number)
 	if (!m_texture.loadFromFile("../Ressource/cards/"+ cardTypeToString(type) +"/" + std::to_string((long long)number) + ".png"))
 		exit(1);
 	m_sprite.setTexture(*back_card_texture);
-	m_sprite.setScale(0.15f, 0.15f);
+	m_sprite.setScale(SCALE, SCALE);
 	m_hide = true;
 }
 

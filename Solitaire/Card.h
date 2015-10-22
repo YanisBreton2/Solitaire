@@ -13,6 +13,8 @@
 # define KING    (13) // Roi
 # define AS      (1)
 
+# define SCALE	 (0.17f)
+
 class			Card
 {
 public:
