@@ -18,7 +18,7 @@ void	MainApplication::initBoard()
 	for (i = 0; i < 7; i++)
 	{
 		rand_card = takeRandCard(&cards);
-		cards.at(rand_card)->setVisible(true);
+		cards.at(rand_card)->hide(false);
 		m_piles[i].push_back(cards.at(rand_card));
 		cards.erase(cards.begin() + rand_card);
 		for (j = i + 1; j < 7; j++)

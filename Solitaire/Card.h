@@ -13,7 +13,6 @@
 # define KING    (13) // Roi
 # define AS      (1)
 
-
 class			Card
 {
 public:
@@ -21,7 +20,7 @@ public:
 				~Card(void);
 	int			getType(void);
 	int			getNumber(void);
-	void		setVisible(bool value);
+	void		hide(bool value);
 	sf::Sprite	getSprite(void);
 	void		setPosition(float x, float y);
 
