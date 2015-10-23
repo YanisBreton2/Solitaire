@@ -88,10 +88,16 @@ void	MainApplication::launch()
 		{
 			if (evt.type == sf::Event::Closed)
 				m_window->close();
+			eventHandler(evt);
 		}
 		m_window->clear(sf::Color(BACKGROUND_RED, BACKGROUND_GREEN, BACKGROUND_BLUE));
 		drawBoard();
 		m_window->display();
 	}
 	exit(0);
+}
+
+void	MainApplication::eventHandler(sf::Event &event)
+{
+
 }

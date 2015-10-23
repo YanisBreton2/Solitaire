@@ -27,6 +27,7 @@ public:
 	void	initPosition(void);
 	void	launch(void);
 	void	drawBoard(void);
+	void	eventHandler(sf::Event &event);
 
 public:
 	sf::RenderWindow	*m_window;
