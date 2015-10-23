@@ -6,13 +6,17 @@
 
 # include "Card.h"
 
-# define PILE_FIRST_POSITION_X ((float)50)
-# define PILE_POSITION_Y ((float)220)
-# define PILE_DELTA_X ((float)200)
-# define PILE_DELTA_Y ((float)10)
+# define BACKGROUND_RED			(20)
+# define BACKGROUND_GREEN		(116)
+# define BACKGROUND_BLUE		(20)
 
-# define STACK_POSITION_X ((float)50)
-# define STACK_POSITION_Y ((float)50)
+# define PILE_FIRST_POSITION_X	((float)50)
+# define PILE_POSITION_Y		((float)220)
+# define PILE_DELTA_X			((float)200)
+# define PILE_DELTA_Y			((float)18)
+
+# define STACK_POSITION_X		((float)50)
+# define STACK_POSITION_Y		((float)50)
 
 class MainApplication
 {
