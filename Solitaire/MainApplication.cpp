@@ -50,7 +50,7 @@ void	MainApplication::initPosition()
 			m_piles[i].at(j)->setPosition(PILE_FIRST_POSITION_X + (float)i * PILE_DELTA_X, PILE_POSITION_Y + (float)j * PILE_DELTA_Y);
 }
 
-		MainApplication::MainApplication(sf::RenderWindow *window): m_window(window)
+		MainApplication::MainApplication(sf::RenderWindow *window): m_window(window), m_card_moving(NULL)
 {
 	unsigned int	type;
 	unsigned int	number;
@@ -76,6 +76,8 @@ void	MainApplication::drawBoard()
 	for (i = 0; i < 7; i++)
 		for (j = 0; j < m_piles[i].size(); j++)
 			m_window->draw(m_piles[i].at(j)->getSprite());
+	if (m_card_moving)
+		m_window->draw(m_card_moving->getSprite());
 }
 
 void	MainApplication::launch()

@@ -35,6 +35,7 @@ public:
 	std::vector<Card *>	m_stack; // Pioche
 	std::vector<Card *>	m_piles[7]; // Les sept piles du bas
 	std::vector<Card *>	m_ordered_piles[4]; // Les quatre piles du haut
+	Card				*m_card_moving;
 };
 
 #endif /* !MAINAPPLICATION_H_ */
