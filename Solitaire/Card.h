@@ -15,6 +15,9 @@
 
 # define SCALE	 (0.17f)
 
+# define CARD_HEIGHT	(123)
+# define CARD_WIDTH		(85)
+
 class			Card
 {
 public:
@@ -23,6 +26,7 @@ public:
 	int			getType(void);
 	int			getNumber(void);
 	void		hide(bool value);
+	bool		isHide(void);
 	sf::Sprite	getSprite(void);
 	void		setPosition(float x, float y);
 

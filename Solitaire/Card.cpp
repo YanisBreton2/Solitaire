@@ -66,3 +66,8 @@ void	Card::setPosition(float x, float y)
 {
 	m_sprite.setPosition(x, y);
 }
+
+bool	Card::isHide()
+{
+	return (m_hide);
+}

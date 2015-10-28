@@ -101,5 +101,37 @@ void	MainApplication::launch()
 
 void	MainApplication::eventHandler(sf::Event &event)
 {
+	if (event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::Escape)
+		exit(0);
+	if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left)
+	{
+		int x = event.mouseButton.x;
+		int y = event.mouseButton.y;
 
+		if (x >= STACK_POSITION_X && x <= STACK_POSITION_X + CARD_WIDTH && y >= STACK_POSITION_Y && y <= STACK_POSITION_Y + CARD_HEIGHT)
+			printf("Stack\n");
+		else
+		{
+			int i;
+			for (i = 0; i < 7; i++)
+			{
+				if (x >= PILE_FIRST_POSITION_X + i * PILE_DELTA_X && x <= PILE_FIRST_POSITION_X + i * PILE_DELTA_X + CARD_WIDTH)
+				{
+					if (y >= PILE_POSITION_Y && y <= PILE_POSITION_Y + (m_piles[i].size() - 1) * PILE_DELTA_Y + CARD_HEIGHT)
+					{
+						for (int j = m_piles[i].size() - 1; j >= 0; j--)
+						{
+							if (y > m_piles[i].at(j)->getSprite().getPosition().y)
+							{
+								if (j == m_piles[i].size() - 1 && m_piles[i].at(j)->isHide())
+									m_piles[i].at(j)->hide(false);
+								printf("Pile %d Card n°%d\n", i, j);
+								break;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
