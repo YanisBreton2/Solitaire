@@ -1,7 +1,11 @@
 #ifndef CARD_H_
 # define CARD_H_
 
-# include <SFML\Graphics.hpp>
+# if defined(WIN32) || defined(_WIN32) || defined(__WIN32) && !defined(__CYGWIN__)
+#  include <SFML\Graphics.hpp>
+# else
+#  include <SFML/Graphics.hpp>
+# endif /* !WINDOWS */
 
 # define DIAMOND (1)  // Carreaux
 # define SPADE   (2)  // Pique

@@ -1,7 +1,12 @@
 #ifndef MAINAPPLICATION_H_
 # define MAINAPPLICATION_H_
 
-# include <SFML/Graphics.hpp>
+# if defined(WIN32) || defined(_WIN32) || defined(__WIN32) && !defined(__CYGWIN__)
+#  include <SFML\Graphics.hpp>
+# else
+#  include <SFML/Graphics.hpp>
+# endif /* !WINDOWS */
+
 # include <vector>
 
 # include "Card.h"
